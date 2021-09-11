@@ -7,7 +7,7 @@ export const DcScreen = () => {
             <h1>Computadoras</h1>
             <hr />
 
-            <HeroList departamento="DC Comics" />
+            <HeroList departamento="Computadoras" />
 
         </div>
     )

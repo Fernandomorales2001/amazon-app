@@ -6,7 +6,7 @@ export const MarvelScreen = () => {
         <div>
             <h1>Audifonos</h1>
             <hr />
-            <HeroList departamento="Marvel Comics" />
+            <HeroList departamento="Audifonos" />
         </div>
     )
 }

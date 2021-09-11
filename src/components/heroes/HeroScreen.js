@@ -43,12 +43,12 @@ export const HeroScreen = ({ history }) => {
             <div className="col-8 animate__animated animate__fadeIn">
                 <h3> { titulo } </h3>
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item"> <b> Alter ego: </b> { marca } </li>
-                    <li className="list-group-item"> <b> departamento: </b> { departamento } </li>
-                    <li className="list-group-item"> <b> First appearance: </b> { color } </li>
+                    <li className="list-group-item"> <b> Marca: </b> { marca } </li>
+                    <li className="list-group-item"> <b> Departamento: </b> { departamento } </li>
+                    <li className="list-group-item"> <b> Color: </b> { color } </li>
                 </ul>
 
-                <h5> articulo </h5>
+                <h5> Sobre este articulo </h5>
                 <p> { articulo } </p>
 
                 <button 
