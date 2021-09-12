@@ -9,7 +9,7 @@ export const Navbar = () => {
                 className="navbar-brand" 
                 to="/"
             >
-                Amazon App
+               <i class="fab fa-amazon w-20" ></i> Amazon App
             </Link>
 
             <div className="navbar-collapse">
