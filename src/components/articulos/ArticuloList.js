@@ -4,12 +4,12 @@ import { ArticuloCard } from './ArticuloCard';
 
 export const ArticuloList = ({ departamento }) => {
 
-    const heroes = useMemo(() => getArticulosByDepto( departamento ), [ departamento ] );
+    const articulos = useMemo(() => getArticulosByDepto( departamento ), [ departamento ] );
 
     return (
         <div className="card-columns animate__animated animate__fadeIn">
            {
-               heroes.map( hero => (
+               articulos.map( hero => (
                    <ArticuloCard
                         key={ hero.id }
                         { ...hero }

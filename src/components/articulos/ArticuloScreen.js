@@ -4,9 +4,9 @@ import { getArticuloById } from '../../selectors/getArticuloById';
 
 export const ArticuloScreen = ({ history }) => {
 
-    const { heroeId } = useParams();
+    const { articuloId } = useParams();
 
-    const hero = useMemo(() => getArticuloById( heroeId ), [ heroeId ]);
+    const hero = useMemo(() => getArticuloById( articuloId ), [ articuloId ]);
 
     if ( !hero ) {
         return <Redirect to="/" />;
@@ -34,7 +34,7 @@ export const ArticuloScreen = ({ history }) => {
         <div className="row mt-5">
             <div className="col-4">
                 <img 
-                    src={ `../assets/heroes/${ heroeId }.jpg` }
+                    src={ `../assets/articulos/${ articuloId }.jpg` }
                     alt={ titulo }
                     className="img-thumbnail animate__animated animate__fadeInLeft"
                 />

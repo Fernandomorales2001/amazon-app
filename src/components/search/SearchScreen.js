@@ -15,7 +15,7 @@ export const SearchScreen = ({ history }) => {
     });
     const { searchText } = formValues;
     
-    const heroesFiltered = useMemo(() => getArticulosByName( q ), [q])
+    const articulosFiltered = useMemo(() => getArticulosByName( q ), [q])
 
 
     const handleSearch = (e) => {
@@ -71,7 +71,7 @@ export const SearchScreen = ({ history }) => {
                     }
 
                     { 
-                        (q !=='' && heroesFiltered.length === 0 ) 
+                        (q !=='' && articulosFiltered.length === 0 ) 
                             && 
                             <div className="alert alert-danger">
                                 No existe ese producto, intente de nuevo { q }
@@ -79,7 +79,7 @@ export const SearchScreen = ({ history }) => {
                     }
 
                     {
-                        heroesFiltered.map( hero => (
+                        articulosFiltered.map( hero => (
                             <ArticuloCard 
                                 key={ hero.id }
                                 { ...hero }
