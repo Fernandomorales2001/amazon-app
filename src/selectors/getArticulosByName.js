@@ -1,7 +1,7 @@
 import { productos } from '../data/depto';
 
 
-export const getHeroesByName = ( name = '' ) => {
+export const getArticulosByName = ( name = '' ) => {
 
     if ( name === '' ) {
         return [];

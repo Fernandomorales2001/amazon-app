@@ -1,6 +1,6 @@
 import { productos } from '../data/depto';
 
-export const getHeroesByPublisher = ( departamento ) => {
+export const getArticulosByDepto = ( departamento ) => {
 
     const validPublishers = ['Computadoras', 'Audifonos'];
 

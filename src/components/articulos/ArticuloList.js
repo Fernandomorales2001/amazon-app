@@ -1,16 +1,16 @@
 import React, { useMemo } from 'react';
-import { getHeroesByPublisher } from '../../selectors/getHeroesByPublisher';
-import { HeroCard } from './HeroCard';
+import { getArticulosByDepto } from '../../selectors/getArticulosByDepto';
+import { ArticuloCard } from './ArticuloCard';
 
-export const HeroList = ({ departamento }) => {
+export const ArticuloList = ({ departamento }) => {
 
-    const heroes = useMemo(() => getHeroesByPublisher( departamento ), [ departamento ] );
+    const heroes = useMemo(() => getArticulosByDepto( departamento ), [ departamento ] );
 
     return (
         <div className="card-columns animate__animated animate__fadeIn">
            {
                heroes.map( hero => (
-                   <HeroCard 
+                   <ArticuloCard
                         key={ hero.id }
                         { ...hero }
                     />

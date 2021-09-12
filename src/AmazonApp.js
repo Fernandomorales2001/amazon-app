@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppRouter } from './routers/AppRouter'
 
-export const HeroesApp = () => {
+export const AmazonApp = () => {
     return (
         <AppRouter />
     )

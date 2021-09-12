@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const HeroCard = ({
+export const ArticuloCard = ({
     id,
     titulo,
     marca,

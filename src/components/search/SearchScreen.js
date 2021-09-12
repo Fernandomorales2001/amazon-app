@@ -1,9 +1,9 @@
 import React, { useMemo } from 'react';
 import queryString from 'query-string';
-import { HeroCard } from '../heroes/HeroCard';
+import { ArticuloCard } from '../articulos/ArticuloCard';
 import { useForm } from '../../hooks/useForm';
 import { useLocation } from 'react-router-dom';
-import { getHeroesByName } from '../../selectors/getHeroesByName';
+import { getArticulosByName } from '../../selectors/getArticulosByName';
 
 export const SearchScreen = ({ history }) => {
 
@@ -15,7 +15,7 @@ export const SearchScreen = ({ history }) => {
     });
     const { searchText } = formValues;
     
-    const heroesFiltered = useMemo(() => getHeroesByName( q ), [q])
+    const heroesFiltered = useMemo(() => getArticulosByName( q ), [q])
 
 
     const handleSearch = (e) => {
@@ -80,7 +80,7 @@ export const SearchScreen = ({ history }) => {
 
                     {
                         heroesFiltered.map( hero => (
-                            <HeroCard 
+                            <ArticuloCard 
                                 key={ hero.id }
                                 { ...hero }
                             />

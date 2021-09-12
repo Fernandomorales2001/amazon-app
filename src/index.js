@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HeroesApp } from './HeroesApp';
+import { AmazonApp } from './AmazonApp';
 
 
 ReactDOM.render(
-  <HeroesApp />,
+  <AmazonApp />,
   document.getElementById('root')
 );
