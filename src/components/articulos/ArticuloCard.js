@@ -30,7 +30,7 @@ export const ArticuloCard = ({
                             <small className="text-muted"> { color } </small>
                         </p>
 
-                        <Link to={ `./hero/${ id }` }>
+                        <Link to={ `./articulo/${ id }` }>
                             Más...
                         </Link>
 

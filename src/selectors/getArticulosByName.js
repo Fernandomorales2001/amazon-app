@@ -8,6 +8,6 @@ export const getArticulosByName = ( name = '' ) => {
     }
 
     name = name.toLocaleLowerCase();
-    return productos.filter( hero => hero.titulo.toLocaleLowerCase().includes( name )  );
+    return productos.filter( articulo => articulo.titulo.toLocaleLowerCase().includes( name )  );
 
 }

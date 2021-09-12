@@ -9,10 +9,10 @@ export const ArticuloList = ({ departamento }) => {
     return (
         <div className="card-columns animate__animated animate__fadeIn">
            {
-               articulos.map( hero => (
+               articulos.map( article => (
                    <ArticuloCard
-                        key={ hero.id }
-                        { ...hero }
+                        key={ article.id }
+                        { ...article }
                     />
                    
                ))

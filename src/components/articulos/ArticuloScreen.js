@@ -6,9 +6,9 @@ export const ArticuloScreen = ({ history }) => {
 
     const { articuloId } = useParams();
 
-    const hero = useMemo(() => getArticuloById( articuloId ), [ articuloId ]);
+    const article = useMemo(() => getArticuloById( articuloId ), [ articuloId ]);
 
-    if ( !hero ) {
+    if ( !article ) {
         return <Redirect to="/" />;
     }
 
@@ -28,7 +28,7 @@ export const ArticuloScreen = ({ history }) => {
         marca,
         color,
         articulo,
-    } = hero;
+    } = article;
     
     return (
         <div className="row mt-5">
